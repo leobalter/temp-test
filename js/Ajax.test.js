@@ -3,7 +3,7 @@
   QUnit.test('Manual', function(assert) {
     var done;
     done = assert.async();
-    return $.ajax({
+    $.ajax({
       type: "GET",
       dataType: "json",
       url: "test.json",
@@ -19,6 +19,8 @@
         return done();
       });
     });
+
+    return;
   });
 
 }).call(this);
