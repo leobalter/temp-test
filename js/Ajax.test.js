@@ -6,13 +6,13 @@
     return $.ajax({
       type: "GET",
       dataType: "json",
-      url: "/test.json",
+      url: "test.json",
       cache: false
     }).done(function() {
       return $.ajax({
         type: "GET",
         dataType: "json",
-        url: "/test.json",
+        url: "test.json",
         cache: false
       }).done(function() {
         assert.ok(true);
